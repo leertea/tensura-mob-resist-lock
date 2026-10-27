@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "mobresistlock"
+version = "1.0.0"
+displayName = "Mob Resistance Lock"
+description = '''
+Adds /edit resistances <true|false> to control whether non-player mobs can still learn
+Tensura resistances after they have spawned.
+'''
+
+[[dependencies.mobresistlock]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mobresistlock]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mobresistlock]]
+modId = "tensura"
+type = "optional"
+versionRange = "[2.0.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
